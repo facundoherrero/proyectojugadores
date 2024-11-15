@@ -51,9 +51,9 @@ class affectnetDataset(torch.utils.data.Dataset):
     def __init__(self):
         super(affectnetDataset, self).__init__()
       
-        self.data = pd.read_csv("../data/filtered_data_fix2_withimages2.csv")
+        self.data = pd.read_csv("data/filtered_data_fix2_withimages2.csv")
 
-        f,l = read_images_from_csv("../data/filtered_data_fix2_withimages2.csv", n=-1)
+        f,l = read_images_from_csv("data/filtered_data_fix2_withimages2.csv", n=-1)
 
 
         names = list(self.data["Name"])
