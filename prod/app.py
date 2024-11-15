@@ -12,7 +12,7 @@ import random
 st.title("Bienvenido! Elija un filtro para comenzar a generar jugadores de futbol ⚽")
 
 import pandas as pd
-data = pd.read_csv("../data/filtered_data_fix2_withimages2.csv")
+data = pd.read_csv("data/filtered_data_fix2_withimages2.csv")
 
 # Create dropdown for 'a', 'b', or 'c'
 option = st.selectbox('Elija un filtro:', ['Por Nacionalidad', 'Por Posicion', 'Por club'])
