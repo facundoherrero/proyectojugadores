@@ -192,7 +192,7 @@ latent_dims = 100
 vae_loaded = Variational_Autoencoder(latent_dims).to(device)
 
 # Load the saved state dictionary into the new model
-vae_loaded.load_state_dict(torch.load("vae_model32.pth", map_location=device))
+vae_loaded.load_state_dict(torch.load("prod/vae_model32.pth", map_location=device))
 
 
 # Set the model to evaluation mode for inference
